@@ -237,6 +237,334 @@
         </footer>
     </div>
 
+
+    <div class="copy-alert">
+        <div class="_close-copy-alert copy-alert__bg modal-bg"></div>
+        <div class="copy-alert__dialog">
+            <div class="info-block__icon">
+                <img src="img/copy2.svg" alt="">
+            </div>
+            <div class="text32 medium-text">
+                Скопировано
+            </div>
+            <button class="_close-copy-alert copy-alert__close">
+                <img src="img/close.svg" alt="">
+            </button>
+        </div>
+    </div>
+
+
+    <div class="modal confirm-modal" id="confirmModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="text32 medium-text text-center">
+                Подтверждение данных сделки cm565446
+            </div>
+            <div class="confirm-modal__items grid2 grid-mob">
+                <div class="confirm-modal__item">
+                    <div class="text16 cadet-gray-text">
+                        Мы переведём
+                    </div>
+                    <div class="text16 medium-text">
+                        8 752 RUB
+                    </div>
+                </div>
+                <div class="confirm-modal__item">
+                    <div class="text16 cadet-gray-text">
+                        Ваши реквизиты
+                    </div>
+                    <div class="text16 medium-text">
+                        4276 5500 5439 0185
+                    </div>
+                </div>
+            </div>
+            <div class="confirm-modal__nav">
+                <button class="confirm-modal__btn m-btn m-btn-primary">
+                    <span>Подтвердить данные</span>
+                </button>
+                <button class="deal-info__cancel _close-modal">
+                    Отменить сделку
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="modal confirm-modal" id="confirmModal2">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="text32 medium-text text-center">
+                Подтверждение данных сделки cm565446
+            </div>
+            <div class="confirm-modal__items grid2 grid-mob">
+                <div class="confirm-modal__item">
+                    <div class="text16 cadet-gray-text">
+                        Мы переведём
+                    </div>
+                    <div class="text16 medium-text">
+                        100 USDT
+                    </div>
+                </div>
+                <div class="confirm-modal__item">
+                    <div class="text16 cadet-gray-text">
+                        Ваши реквизиты
+                    </div>
+                    <div class="text16 medium-text">
+                        1N4Qbzg6LSXUXyXu2MDuGfzxwMA7do8AyL
+                    </div>
+                </div>
+            </div>
+            <div class="confirm-modal__nav">
+                <button class="confirm-modal__btn m-btn m-btn-primary">
+                    <span>Подтвердить данные</span>
+                </button>
+                <button class="deal-info__cancel _close-modal">
+                    Отменить сделку
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal verification-modal" id="verificationModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text32 medium-text">
+                    Верификация карты
+                </div>
+                <button class="close-btn _close-modal">
+                    <img src="img/close.svg" alt="">
+                </button>
+            </div>
+
+            <div class="verification-deal">
+                <div class="text16 cadet-gray-text">
+                    Сделка: <span>cm565446</span> <br>
+            Сбербанк RUB <span>8 752 RUB</span> — Tether TRC20 (USDT) <span>100 USDT</span>
+                </div>
+            </div>
+
+            <form action="" class="verification-form">
+                <div class="text16 caps-text medium-text">
+                    Введите данные карты
+                </div>
+                <div class="verification-form__fields grid2 grid-mob">
+                    <div class="fg">
+                        <input type="text" placeholder="ФИО без сокращений">
+                        <label>ФИО владельца карты</label>
+                    </div>
+                    <div class="fg">
+                        <input class="_card-field" type="text" placeholder="____ ____ ____ ____">
+                        <label>Номер карты</label>
+                    </div>
+                </div>
+                <div class="m-check">
+                    <input type="checkbox">
+                    <label>
+                        <span>Запомнить карту для следующих сделок</span>
+                    </label>
+                </div>
+
+                <div class="card-verification">
+                    <div class="text16 caps-text medium-text">
+                        Загрузите фото карты
+                    </div>
+                    <div class="card-verification__types">
+                        <div class="btn-check">
+                            <input checked type="radio" name="cardType">
+                            <div class="btn-check__inner">
+                                <span class="text16">Пластиковая карта</span>
+                            </div>
+                        </div>
+                        <div class="btn-check">
+                            <input type="radio" name="cardType">
+                            <div class="btn-check__inner">
+                                <span class="text16">Виртуальная карта</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-verification__hint">
+                        <div class="text16 cadet-gray-text">
+                            Вы можете загрузить фото одним из двух способов:
+                        </div>
+                    </div>
+                    <div class="verification-ways">
+                        <div class="verification-way">
+                            <div class="verification-way__img">
+                                <img src="img/verification-way.webp" alt="">
+                            </div>
+                            <div class="verification-way__content">
+                                <div class="text16">
+                                    <span class="medium-text">Первый способ.</span> Загрузите фото лицевой стороны карты на фоне сделки. Можно закрыть все данные карты, кроме номера.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="verification-way">
+                            <div class="verification-way__img">
+                                <img src="img/verification-way2.webp" alt="">
+                            </div>
+                            <div class="verification-way__content">
+                                <div class="text16">
+                                    <span class="medium-text">Второй способ.</span> Загрузите фото лицевой стороны карты на фоне надписи «Покупка крипты по сделке cm565446». Можно закрыть все данные карты, кроме номера.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-verification__hint">
+                        <div class="text16 cadet-gray-text">
+                            Вы также можете загрузить фото карты с компьютера или смартфона:
+                        </div>
+                    </div>
+
+                    <div class="card-upload">
+                        <div class="file-input">
+                            <input type="file">
+                            <div class="file-input__inner">
+                                <img src="img/download.svg" alt="">
+                                <div class="text17 medium-text">
+                                    Загрузить фото
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-upload__qr">
+                            <img src="img/qr.webp" alt="">
+                            <div class="text">
+                                <p>
+                                    <span class="medium-text">
+                                Загрузить фото карты с телефона.
+                            </span>
+                                    Отсканируйте QR-код или
+                                    <button class="primary-text">отправьте ссылку</button> на страницу прикрепления фотографии на свой e-mail.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-verification__nav">
+                        <button disabled class="m-btn m-btn-primary">
+                            <span>Отправить на модерацию</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="modal verification-modal" id="verificationModal2">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text32 medium-text">
+                    Верификация карты
+                </div>
+                <button class="close-btn _close-modal">
+                    <img src="img/close.svg" alt="">
+                </button>
+            </div>
+
+            <div class="verification-deal">
+                <div class="text16 cadet-gray-text">
+                    Сделка: <span>cm565446</span> <br>
+            Сбербанк RUB <span>8 752 RUB</span> — Tether TRC20 (USDT) <span>100 USDT</span>
+                </div>
+            </div>
+
+            <form action="" class="verification-form">
+                <div class="text16 caps-text medium-text">
+                    Введите данные карты
+                </div>
+                <div class="verification-form__fields grid2 grid-mob">
+                    <div class="fg">
+                        <input type="text" placeholder="ФИО без сокращений">
+                        <label>ФИО владельца карты</label>
+                    </div>
+                    <div class="fg">
+                        <input class="_card-field" type="text" placeholder="____ ____ ____ ____">
+                        <label>Номер карты</label>
+                    </div>
+                </div>
+                <div class="m-check">
+                    <input type="checkbox">
+                    <label>
+                        <span>Запомнить карту для следующих сделок</span>
+                    </label>
+                </div>
+
+                <div class="card-verification">
+                    <div class="text16 caps-text medium-text">
+                        Загрузите фото карты
+                    </div>
+                    <div class="card-verification__types">
+                        <div class="btn-check">
+                            <input checked type="radio" name="cardType">
+                            <div class="btn-check__inner">
+                                <span class="text16">Пластиковая карта</span>
+                            </div>
+                        </div>
+                        <div class="btn-check">
+                            <input type="radio" name="cardType">
+                            <div class="btn-check__inner">
+                                <span class="text16">Виртуальная карта</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-verification__hint">
+                        <div class="text16 cadet-gray-text">
+                            Вы можете загрузить фото одним из двух способов:
+                        </div>
+                    </div>
+                    <div class="verification-ways">
+                        <div class="verification-way">
+                            <div class="verification-way__img">
+                                <img src="img/verification-way.webp" alt="">
+                            </div>
+                            <div class="verification-way__content">
+                                <div class="text16">
+                                    <span class="medium-text">Первый способ.</span> Загрузите фото лицевой стороны карты на фоне сделки. Можно закрыть все данные карты, кроме номера.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="verification-way">
+                            <div class="verification-way__img">
+                                <img src="img/verification-way2.webp" alt="">
+                            </div>
+                            <div class="verification-way__content">
+                                <div class="text16">
+                                    <span class="medium-text">Второй способ.</span> Загрузите фото лицевой стороны карты на фоне надписи «Покупка крипты по сделке cm565446». Можно закрыть все данные карты, кроме номера.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-verification__hint">
+                        <div class="text16 cadet-gray-text">
+                            Вы также можете загрузить фото карты с компьютера или смартфона:
+                        </div>
+                    </div>
+
+
+                    <div class="upload-success">
+                        <img src="img/check5.svg" alt="">
+                        <span class="text16">Фото карты успешно загружено</span>
+                    </div>
+
+                    <div class="card-verification__nav">
+                        <button class="m-btn m-btn-primary">
+                            <span>Отправить на модерацию</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
 
