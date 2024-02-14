@@ -6,10 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
+
+    <meta property="og:site_name" content="BitBerry">
+    <meta property="og:title" content="BitBerry" />
+    <meta property="og:image" itemprop="image" content="img/preview.png">
+    <meta property="og:type" content="website" />
+
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <title>Главная</title>
 </head>
+
 
 <body class="m-page">
     <div class="wrapper">
@@ -26,7 +36,7 @@
                                 <rect class="_fill" x="4" y="4" width="8" height="8" rx="4" fill="#78BC61" />
                             </svg>
 
-                            <div class="text16">Оператор <span class="is-online__title">online</span></div>
+                            <div class="text18">Оператор <span class="is-online__title">online</span></div>
 
 
                         </div>
@@ -148,69 +158,46 @@
                                 </div>
                             </div>
 
-                            <div class="main-banner swiper-slide m-backdrop" style="background-image: url(img/main.webp);">
+                            <div class="main-banner swiper-slide m-backdrop" style="background-image: url(img/main2.webp);">
                                 <div class="container">
                                     <div class="main-banner__inner">
 
 
                                         <div class="text32 medium-text">
-                                            Приём и выдача наличных в 37 городах по миру
+                                            Оставь отзыв — получи 200₽
                                         </div>
 
                                         <div class="main-banner__desc">
                                             <div class="text16">
-                                                Большие резервы в каждом городе. Охраняемые офисы в бизнес-центрах. Без личных данных. Возможность бесконтактной передачи
+                                                Соверши обмен → Оставь отзыв о нашем сервисе на Bestchange → Получи пополнение баланса телефона на 200 ₽. Подробности у менеджера в чате
                                             </div>
                                         </div>
                                         <div class="main-banner__nav">
                                             <a href="" class="m-btn m-btn-primary">
-                                                <span>Список городов</span>
+                                                <span>Оставить отзыв</span>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="main-banner swiper-slide m-backdrop" style="background-image: url(img/main.webp);">
+                            <div class="main-banner swiper-slide m-backdrop" style="background-image: url(img/main3.webp);">
                                 <div class="container">
                                     <div class="main-banner__inner">
 
 
                                         <div class="text32 medium-text">
-                                            Приём и выдача наличных в 37 городах по миру
+                                            Оплата зарубежных счетов (инвойсов)
                                         </div>
 
                                         <div class="main-banner__desc">
                                             <div class="text16">
-                                                Большие резервы в каждом городе. Охраняемые офисы в бизнес-центрах. Без личных данных. Возможность бесконтактной передачи
+                                                Теперь вы можете оплатить любой зарубежный счет рублями или криптовалютой в 60 странах мира
                                             </div>
                                         </div>
                                         <div class="main-banner__nav">
                                             <a href="" class="m-btn m-btn-primary">
-                                                <span>Список городов</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="main-banner swiper-slide m-backdrop" style="background-image: url(img/main.webp);">
-                                <div class="container">
-                                    <div class="main-banner__inner">
-
-
-                                        <div class="text32 medium-text">
-                                            Приём и выдача наличных в 37 городах по миру
-                                        </div>
-
-                                        <div class="main-banner__desc">
-                                            <div class="text16">
-                                                Большие резервы в каждом городе. Охраняемые офисы в бизнес-центрах. Без личных данных. Возможность бесконтактной передачи
-                                            </div>
-                                        </div>
-                                        <div class="main-banner__nav">
-                                            <a href="" class="m-btn m-btn-primary">
-                                                <span>Список городов</span>
+                                                <span>Подробнее</span>
                                             </a>
                                         </div>
                                     </div>
@@ -254,7 +241,7 @@
                                 </div>
                                 <div class="exchange-info__right _flex">
                                     <div class="exchange-info__time text16 cadet-gray-text">
-                                        До обновления курса: <span class="primary-text medium-text">00:28</span>
+                                        До обновления курса: <span onclick="showLoader()" class="primary-text medium-text">00:28</span>
                                     </div>
                                 </div>
                             </div>
@@ -535,6 +522,9 @@
                             <div class="exchange__hint text16">
                                 Нажимая на кнопку, вы выражаете согласие с <a href="">политикой AML и KYC</a> и <a href="">пользовательским соглашением</a> сервиса BitBerry
                             </div>
+                            <div class="loader__wrap">
+                                <div class="loader">Loading...</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -803,7 +793,7 @@
     </div>
 
 
-    <div class="copy-alert">
+    <div id="copyAlert" class="copy-alert">
         <div class="_close-copy-alert copy-alert__bg modal-bg"></div>
         <div class="copy-alert__dialog">
             <div class="info-block__icon">
@@ -811,6 +801,21 @@
             </div>
             <div class="text32 medium-text">
                 Скопировано
+            </div>
+            <button class="_close-copy-alert copy-alert__close">
+                <img src="img/close.svg" alt="">
+            </button>
+        </div>
+    </div>
+
+    <div id="cardAlert" class="copy-alert">
+        <div class="_close-copy-alert copy-alert__bg modal-bg"></div>
+        <div class="copy-alert__dialog">
+            <div class="info-block__icon">
+                <img src="img/copy2.svg" alt="">
+            </div>
+            <div class="text32 medium-text">
+                Карта выбрана
             </div>
             <button class="_close-copy-alert copy-alert__close">
                 <img src="img/close.svg" alt="">
@@ -1128,6 +1133,42 @@
 
         </div>
 
+    </div>
+
+    <div class="modal" id="withdrawModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="text32 medium-text text-center">
+                Вывод партнёрского бонуса
+            </div>
+
+            <form action="" class="withdraw-form">
+                <div class="withdraw-form__fields">
+                    <div class="fg">
+                        <input data-all-sum="0.00025" type="number" placeholder="Введите сумму" step="0.0000001">
+                        <label>Сумма</label>
+                        <button type="button" class="withdraw-form__all-sum m-btn m-btn-gray">
+                            <span>Всё</span>
+                        </button>
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Введите реквизиты">
+                        <label>Реквизиты</label>
+                    </div>
+                </div>
+                <div class="withdraw-form__hint">
+                    <div class="text16">
+                        Внимание! После создания заявки кошелек сохранится в системе и следующие выплаты будут возможны только на этот кошелек. Изменить кошелек можно через техподдержку.
+                    </div>
+                </div>
+                <div class="withdraw-form__nav">
+                    <button class="m-btn m-btn--big m-btn-primary">
+                        <span>Вывести средства</span>
+                    </button>
+                </div>
+            </form>
+
+        </div>
     </div>
 
     <script src="js/libs.min.js"></script>

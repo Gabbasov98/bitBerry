@@ -6,10 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
+
+    <meta property="og:site_name" content="BitBerry">
+    <meta property="og:title" content="BitBerry" />
+    <meta property="og:image" itemprop="image" content="img/preview.png">
+    <meta property="og:type" content="website" />
+
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <title>Главная</title>
 </head>
+
 
 
 <style>
@@ -97,8 +107,12 @@
         <a href="404.html" style="display: block; margin-bottom: 20px;">
             404
         </a>
+        <button data-modal="withdrawModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Вывод партнёрского бонуса
+        </button>
 
         <hr style="display: block; margin: 0 0 20px;">
+
 
         <button data-modal="confirmModal" style="border: 2px solid #000;margin-bottom: 20px;">
             Подтверждение данных
@@ -111,6 +125,9 @@
         </a>
         <a href="deal3.html" style="display: block; margin-bottom: 20px;">
             Сделка крипта-фиат. Перевод
+        </a>
+        <a href="deal3.html" style="display: block; margin-bottom: 20px;">
+            Сделка крипта-фиат. Ошибка обмена
         </a>
 
         <hr style="display: block; margin: 0 0 20px;">
@@ -145,6 +162,21 @@
         <a href="deal-success.html" style="display: block; margin-bottom: 20px;">
             Сделка фиат-крипта. Благодарность
         </a>
+        <a href="deal10.html" style="display: block; margin-bottom: 20px;">
+            Сделка фиат-крипта. Выбор доступной карты
+        </a>
+        <a href="deal11.html" style="display: block; margin-bottom: 20px;">
+            Сделка фиат-крипта. Ожидание реквизитов
+        </a>
+        <a href="card-screen.html" style="display: block; margin-bottom: 20px;">
+            Сделка фиат-крипта. Снимок карты
+        </a>
+        <a href="card-screen2.html" style="display: block; margin-bottom: 20px;">
+            Сделка фиат-крипта. Снимок карты (Успешно)
+        </a>
+        <a href="card-screen3.html" style="display: block; margin-bottom: 20px;">
+            Сделка фиат-крипта. Снимок карты (Ошибка)
+        </a>
 
 
 
@@ -174,7 +206,7 @@
 
     <!--  -->
 
-    <div class="copy-alert">
+    <div id="copyAlert" class="copy-alert">
         <div class="_close-copy-alert copy-alert__bg modal-bg"></div>
         <div class="copy-alert__dialog">
             <div class="info-block__icon">
@@ -182,6 +214,21 @@
             </div>
             <div class="text32 medium-text">
                 Скопировано
+            </div>
+            <button class="_close-copy-alert copy-alert__close">
+                <img src="img/close.svg" alt="">
+            </button>
+        </div>
+    </div>
+
+    <div id="cardAlert" class="copy-alert">
+        <div class="_close-copy-alert copy-alert__bg modal-bg"></div>
+        <div class="copy-alert__dialog">
+            <div class="info-block__icon">
+                <img src="img/copy2.svg" alt="">
+            </div>
+            <div class="text32 medium-text">
+                Карта выбрана
             </div>
             <button class="_close-copy-alert copy-alert__close">
                 <img src="img/close.svg" alt="">
@@ -499,6 +546,42 @@
 
         </div>
 
+    </div>
+
+    <div class="modal" id="withdrawModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="text32 medium-text text-center">
+                Вывод партнёрского бонуса
+            </div>
+
+            <form action="" class="withdraw-form">
+                <div class="withdraw-form__fields">
+                    <div class="fg">
+                        <input data-all-sum="0.00025" type="number" placeholder="Введите сумму" step="0.0000001">
+                        <label>Сумма</label>
+                        <button type="button" class="withdraw-form__all-sum m-btn m-btn-gray">
+                            <span>Всё</span>
+                        </button>
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Введите реквизиты">
+                        <label>Реквизиты</label>
+                    </div>
+                </div>
+                <div class="withdraw-form__hint">
+                    <div class="text16">
+                        Внимание! После создания заявки кошелек сохранится в системе и следующие выплаты будут возможны только на этот кошелек. Изменить кошелек можно через техподдержку.
+                    </div>
+                </div>
+                <div class="withdraw-form__nav">
+                    <button class="m-btn m-btn--big m-btn-primary">
+                        <span>Вывести средства</span>
+                    </button>
+                </div>
+            </form>
+
+        </div>
     </div>
 
     <script src="js/libs.min.js"></script>
