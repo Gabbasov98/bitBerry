@@ -126,9 +126,14 @@
                     </h1>
                     <form class="auth__wrap">
                         <div class="grid2 grid-mob">
-                            <div class="fg">
+                            <div class="fg _error">
                                 <input type="email" placeholder="Ваш e-mail">
                                 <label>E-mail</label>
+                                <div class="fg__error">
+                                    <div class="text14">
+                                        E-mail или пароль неправильный. Проверьте введённые данные
+                                    </div>
+                                </div>
                             </div>
                             <div class="fg">
                                 <input type="password" placeholder="Ваш пароль">
@@ -152,6 +157,12 @@
                         <div class="auth__links">
                             <a href="" class="auth__link text16">Забыли пароль?</a>
                             <a href="" class="auth__link text16">Забыли пароль?</a>
+                        </div>
+                        <div class="info-alert">
+                            <img src="img/error.svg" alt="">
+                            <span class="text16">
+                                Этот e-mail уже используется
+                            </span>
                         </div>
                     </form>
                 </div>
@@ -395,9 +406,17 @@
                     Введите данные карты
                 </div>
                 <div class="verification-form__fields grid2 grid-mob">
-                    <div class="fg">
+                    <div class="fg _error">
                         <input type="text" placeholder="ФИО без сокращений">
                         <label>ФИО владельца карты</label>
+                        <div class="fg__error2">
+                            <div class="text16">
+                                Введите ФИО без сокращений
+                            </div>
+                            <button type="button" class="fg__close">
+                                <img src="img/close.svg" alt="">
+                            </button>
+                        </div>
                     </div>
                     <div class="fg">
                         <input class="_card-field" type="text" placeholder="____ ____ ____ ____">
@@ -523,9 +542,17 @@
                     Введите данные карты
                 </div>
                 <div class="verification-form__fields grid2 grid-mob">
-                    <div class="fg">
+                    <div class="fg _error">
                         <input type="text" placeholder="ФИО без сокращений">
                         <label>ФИО владельца карты</label>
+                        <div class="fg__error2">
+                            <div class="text16">
+                                Введите ФИО без сокращений
+                            </div>
+                            <button type="button" class="fg__close">
+                                <img src="img/close.svg" alt="">
+                            </button>
+                        </div>
                     </div>
                     <div class="fg">
                         <input class="_card-field" type="text" placeholder="____ ____ ____ ____">
