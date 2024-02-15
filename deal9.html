@@ -256,11 +256,17 @@
                                         </div>
                                         <div class="fg">
                                             <input type="email" value="2202 2063 8748 5167">
-                                            <label>Перевод на карту банка (Иван Геннадьевич К.)</label>
+                                            <label>
+                                                <span class="_view1">Перевод на карту банка (Иван Геннадьевич К.)</span>
+                                                <span class="_view2">Перевод на карту банка</span>
+                                            </label>
                                             <button type="button" class="copy-btn2 m-btn m-btn-gray" data-copy="0.0058058 BTC">
                                                 <img src="img/copy.svg" alt="">
                                                 <span>Копировать</span>
                                             </button>
+                                            <div class="fg__hint">
+                                                <div class="text14">Получатель: Иван Алексеевич Г.</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -837,16 +843,18 @@
 
     </div>
 
-    <div class="modal" id="withdrawModal">
+    <div class="modal withdraw-modal" id="withdrawModal">
         <div class="modal__bg modal-bg _close-modal"></div>
         <div class="modal__dialog">
             <div class="text32 medium-text text-center">
                 Вывод партнёрского бонуса
             </div>
-
+            <button class="close-btn _close-modal">
+                <img src="img/close.svg" alt="">
+            </button>
             <form action="" class="withdraw-form">
                 <div class="withdraw-form__fields">
-                    <div class="fg">
+                    <div class="fg fg--buttons">
                         <input data-all-sum="0.00025" type="number" placeholder="Введите сумму" step="0.0000001">
                         <label>Сумма</label>
                         <button type="button" class="withdraw-form__all-sum m-btn m-btn-gray">

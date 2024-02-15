@@ -125,7 +125,7 @@
                         Сделка pj565448 остановлена
                     </h1>
 
-                    <div class="deal-stopped m-card _small-container">
+                    <div class="deal-stopped m-card m-card--full _small-container">
                         <div class="deal-stopped__text text16 text-center">
                             Ваша сделка остановлена системой. Для продолжения обмена обратитесь к оператору в онлайн-чате.
                         </div>
@@ -607,16 +607,18 @@
 
     </div>
 
-    <div class="modal" id="withdrawModal">
+    <div class="modal withdraw-modal" id="withdrawModal">
         <div class="modal__bg modal-bg _close-modal"></div>
         <div class="modal__dialog">
             <div class="text32 medium-text text-center">
                 Вывод партнёрского бонуса
             </div>
-
+            <button class="close-btn _close-modal">
+                <img src="img/close.svg" alt="">
+            </button>
             <form action="" class="withdraw-form">
                 <div class="withdraw-form__fields">
-                    <div class="fg">
+                    <div class="fg fg--buttons">
                         <input data-all-sum="0.00025" type="number" placeholder="Введите сумму" step="0.0000001">
                         <label>Сумма</label>
                         <button type="button" class="withdraw-form__all-sum m-btn m-btn-gray">

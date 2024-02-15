@@ -126,7 +126,7 @@
                     </h1>
 
                     <div class="faq__items grid _small-container">
-                        <div class="qa-card">
+                        <div class="qa-card _active">
                             <div class="qa-card__show">
                                 <div class="qa-card__title text16 medium-text">
                                     По какому графику работает обменник?
@@ -137,7 +137,7 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="qa-card__hidden">
+                            <div class="qa-card__hidden" style="display: block;">
                                 <div class="text">
                                     <p>
                                         В направлении обмена крипта-крипта у вас есть возможность выбрать плавающий или фиксированный курс.
@@ -146,7 +146,7 @@
                             </div>
                         </div>
 
-                        <div class="qa-card">
+                        <div class="qa-card ">
                             <div class="qa-card__show">
                                 <div class="qa-card__title text16 medium-text">
                                     Фиксируется ли курс?
@@ -166,7 +166,7 @@
                             </div>
                         </div>
 
-                        <div class="qa-card">
+                        <div class="qa-card ">
                             <div class="qa-card__show">
                                 <div class="qa-card__title text16 medium-text">
                                     Обязательна ли регистрация для совершения обмена?
@@ -186,7 +186,7 @@
                             </div>
                         </div>
 
-                        <div class="qa-card">
+                        <div class="qa-card ">
                             <div class="qa-card__show">
                                 <div class="qa-card__title text16 medium-text">
                                     Как быстро обрабатываются заявки?
@@ -206,7 +206,7 @@
                             </div>
                         </div>
 
-                        <div class="qa-card">
+                        <div class="qa-card ">
                             <div class="qa-card__show">
                                 <div class="qa-card__title text16 medium-text">
                                     Какие комиссии у вашего сервиса?
@@ -226,7 +226,7 @@
                             </div>
                         </div>
 
-                        <div class="qa-card">
+                        <div class="qa-card ">
                             <div class="qa-card__show">
                                 <div class="qa-card__title text16 medium-text">
                                     Что делать, если отправил больше чем требуется?
@@ -246,7 +246,7 @@
                             </div>
                         </div>
 
-                        <div class="qa-card">
+                        <div class="qa-card ">
                             <div class="qa-card__show">
                                 <div class="qa-card__title text16 medium-text">
                                     Для чего нужна верификации карты?
@@ -266,7 +266,7 @@
                             </div>
                         </div>
 
-                        <div class="qa-card">
+                        <div class="qa-card ">
                             <div class="qa-card__show">
                                 <div class="qa-card__title text16 medium-text">
                                     Для чего нужна верификации карты?
@@ -286,7 +286,7 @@
                             </div>
                         </div>
 
-                        <div class="qa-card">
+                        <div class="qa-card ">
                             <div class="qa-card__show">
                                 <div class="qa-card__title text16 medium-text">
                                     Как изменить реквизиты, если указал ошибочные?
@@ -306,7 +306,7 @@
                             </div>
                         </div>
 
-                        <div class="qa-card">
+                        <div class="qa-card ">
                             <div class="qa-card__show">
                                 <div class="qa-card__title text16 medium-text">
                                     Как происходит выдача наличных?
@@ -326,7 +326,7 @@
                             </div>
                         </div>
 
-                        <div class="qa-card">
+                        <div class="qa-card ">
                             <div class="qa-card__show">
                                 <div class="qa-card__title text16 medium-text">
                                     С какими валютами работает обменник?
@@ -346,7 +346,7 @@
                             </div>
                         </div>
 
-                        <div class="qa-card">
+                        <div class="qa-card ">
                             <div class="qa-card__show">
                                 <div class="qa-card__title text16 medium-text">
                                     Есть ли у вас возможность сделать перестановку денежных средств?
@@ -366,7 +366,7 @@
                             </div>
                         </div>
 
-                        <div class="qa-card">
+                        <div class="qa-card ">
                             <div class="qa-card__show">
                                 <div class="qa-card__title text16 medium-text">
                                     Проверяются ли транзакции на AML?
@@ -859,16 +859,18 @@
 
     </div>
 
-    <div class="modal" id="withdrawModal">
+    <div class="modal withdraw-modal" id="withdrawModal">
         <div class="modal__bg modal-bg _close-modal"></div>
         <div class="modal__dialog">
             <div class="text32 medium-text text-center">
                 Вывод партнёрского бонуса
             </div>
-
+            <button class="close-btn _close-modal">
+                <img src="img/close.svg" alt="">
+            </button>
             <form action="" class="withdraw-form">
                 <div class="withdraw-form__fields">
-                    <div class="fg">
+                    <div class="fg fg--buttons">
                         <input data-all-sum="0.00025" type="number" placeholder="Введите сумму" step="0.0000001">
                         <label>Сумма</label>
                         <button type="button" class="withdraw-form__all-sum m-btn m-btn-gray">
