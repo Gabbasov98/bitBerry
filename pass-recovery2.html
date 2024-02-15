@@ -352,7 +352,7 @@
 
     </div>
 
-    <div class="modal verification-modal" id="verificationModal">
+    <div class="modal _active verification-modal" id="verificationModal">
         <div class="modal__bg modal-bg _close-modal"></div>
         <div class="modal__dialog">
             <div class="modal__top">
@@ -397,51 +397,77 @@
                     </label>
                 </div>
 
-                <div class="card-verification">
+                <div class="card-verification _tabs-parent">
                     <div class="text16 caps-text medium-text">
                         Загрузите фото карты
                     </div>
                     <div class="card-verification__types">
-                        <div class="btn-check">
-                            <input checked type="radio" name="cardType">
-                            <div class="btn-check__inner">
-                                <span class="text16">Пластиковая карта</span>
-                            </div>
+                        <div class="tab _tab _active" data-tab="_tab1">
+                            <span>Пластиковая карта</span>
                         </div>
-                        <div class="btn-check">
-                            <input type="radio" name="cardType">
-                            <div class="btn-check__inner">
-                                <span class="text16">Виртуальная карта</span>
-                            </div>
+                        <div class="tab _tab" data-tab="_tab2">
+                            <span>Виртуальная карта</span>
                         </div>
                     </div>
-                    <div class="card-verification__hint">
-                        <div class="text16 cadet-gray-text">
-                            Вы можете загрузить фото одним из двух способов:
-                        </div>
-                    </div>
-                    <div class="verification-ways">
-                        <div class="verification-way">
-                            <div class="verification-way__img">
-                                <img src="img/verification-way.webp" alt="">
+                    <div class="tab-content _tab1 _active">
+                        <div class="card-verification__hint">
+                            <div class="text16 cadet-gray-text">
+                                Вы можете загрузить фото одним из двух способов:
                             </div>
-                            <div class="verification-way__content">
-                                <div class="text16">
-                                    <span class="medium-text">Первый способ.</span> Загрузите фото лицевой стороны карты на фоне сделки. Можно закрыть все данные карты, кроме номера.
+                        </div>
+                        <div class="verification-ways">
+                            <div class="verification-way">
+                                <div class="verification-way__img">
+                                    <img src="img/verification-way.webp" alt="">
+                                </div>
+                                <div class="verification-way__content">
+                                    <div class="text16">
+                                        <span class="medium-text">Первый способ.</span> Загрузите фото лицевой стороны карты на фоне сделки. Можно закрыть все данные карты, кроме номера.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="verification-way">
-                            <div class="verification-way__img">
-                                <img src="img/verification-way2.webp" alt="">
-                            </div>
-                            <div class="verification-way__content">
-                                <div class="text16">
-                                    <span class="medium-text">Второй способ.</span> Загрузите фото лицевой стороны карты на фоне надписи «Покупка крипты по сделке cm565446». Можно закрыть все данные карты, кроме номера.
+                            <div class="verification-way">
+                                <div class="verification-way__img">
+                                    <img src="img/verification-way2.webp" alt="">
+                                </div>
+                                <div class="verification-way__content">
+                                    <div class="text16">
+                                        <span class="medium-text">Второй способ.</span> Загрузите фото лицевой стороны карты на фоне надписи «Покупка крипты по сделке cm565446». Можно закрыть все данные карты, кроме номера.
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="tab-content _tab2">
+                        <div class="card-verification__hint">
+                            <div class="text16 cadet-gray-text">
+                                Вы можете загрузить фото одним из двух способов:
+                            </div>
+                        </div>
+                        <div class="verification-ways">
+                            <div class="verification-way">
+                                <div class="verification-way__img">
+                                    <img src="img/verification-way.webp" alt="">
+                                </div>
+                                <div class="verification-way__content">
+                                    <div class="text16">
+                                        <span class="medium-text">Первый способ.</span> Загрузите фото виртуальной карты в мобильном приложении или на сайте банка на фоне сделки. Можно закрыть все данные карты, кроме номера.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="verification-way">
+                                <div class="verification-way__img">
+                                    <img src="img/verification-way2.webp" alt="">
+                                </div>
+                                <div class="verification-way__content">
+                                    <div class="text16">
+                                        <span class="medium-text">Второй способ.</span> Загрузите фото виртуальной карты в мобильном приложении на фоне надписи «Покупка крипты по сделке cm565446». Можно закрыть все данные карты, кроме номера.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
 
                     <div class="card-verification__hint">
                         <div class="text16 cadet-gray-text">
@@ -530,51 +556,77 @@
                     </label>
                 </div>
 
-                <div class="card-verification">
+                <div class="card-verification _tabs-parent">
                     <div class="text16 caps-text medium-text">
                         Загрузите фото карты
                     </div>
                     <div class="card-verification__types">
-                        <div class="btn-check">
-                            <input checked type="radio" name="cardType">
-                            <div class="btn-check__inner">
-                                <span class="text16">Пластиковая карта</span>
-                            </div>
+                        <div class="tab _tab _active" data-tab="_tab1">
+                            <span>Пластиковая карта</span>
                         </div>
-                        <div class="btn-check">
-                            <input type="radio" name="cardType">
-                            <div class="btn-check__inner">
-                                <span class="text16">Виртуальная карта</span>
-                            </div>
+                        <div class="tab _tab" data-tab="_tab2">
+                            <span>Виртуальная карта</span>
                         </div>
                     </div>
-                    <div class="card-verification__hint">
-                        <div class="text16 cadet-gray-text">
-                            Вы можете загрузить фото одним из двух способов:
-                        </div>
-                    </div>
-                    <div class="verification-ways">
-                        <div class="verification-way">
-                            <div class="verification-way__img">
-                                <img src="img/verification-way.webp" alt="">
+                    <div class="tab-content _tab1 _active">
+                        <div class="card-verification__hint">
+                            <div class="text16 cadet-gray-text">
+                                Вы можете загрузить фото одним из двух способов:
                             </div>
-                            <div class="verification-way__content">
-                                <div class="text16">
-                                    <span class="medium-text">Первый способ.</span> Загрузите фото лицевой стороны карты на фоне сделки. Можно закрыть все данные карты, кроме номера.
+                        </div>
+                        <div class="verification-ways">
+                            <div class="verification-way">
+                                <div class="verification-way__img">
+                                    <img src="img/verification-way.webp" alt="">
+                                </div>
+                                <div class="verification-way__content">
+                                    <div class="text16">
+                                        <span class="medium-text">Первый способ.</span> Загрузите фото лицевой стороны карты на фоне сделки. Можно закрыть все данные карты, кроме номера.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="verification-way">
-                            <div class="verification-way__img">
-                                <img src="img/verification-way2.webp" alt="">
-                            </div>
-                            <div class="verification-way__content">
-                                <div class="text16">
-                                    <span class="medium-text">Второй способ.</span> Загрузите фото лицевой стороны карты на фоне надписи «Покупка крипты по сделке cm565446». Можно закрыть все данные карты, кроме номера.
+                            <div class="verification-way">
+                                <div class="verification-way__img">
+                                    <img src="img/verification-way2.webp" alt="">
+                                </div>
+                                <div class="verification-way__content">
+                                    <div class="text16">
+                                        <span class="medium-text">Второй способ.</span> Загрузите фото лицевой стороны карты на фоне надписи «Покупка крипты по сделке cm565446». Можно закрыть все данные карты, кроме номера.
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="tab-content _tab2">
+                        <div class="card-verification__hint">
+                            <div class="text16 cadet-gray-text">
+                                Вы можете загрузить фото одним из двух способов:
+                            </div>
+                        </div>
+                        <div class="verification-ways">
+                            <div class="verification-way">
+                                <div class="verification-way__img">
+                                    <img src="img/verification-way.webp" alt="">
+                                </div>
+                                <div class="verification-way__content">
+                                    <div class="text16">
+                                        <span class="medium-text">Первый способ.</span> Загрузите фото виртуальной карты в мобильном приложении или на сайте банка на фоне сделки. Можно закрыть все данные карты, кроме номера.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="verification-way">
+                                <div class="verification-way__img">
+                                    <img src="img/verification-way2.webp" alt="">
+                                </div>
+                                <div class="verification-way__content">
+                                    <div class="text16">
+                                        <span class="medium-text">Второй способ.</span> Загрузите фото виртуальной карты в мобильном приложении на фоне надписи «Покупка крипты по сделке cm565446». Можно закрыть все данные карты, кроме номера.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
 
                     <div class="card-verification__hint">
                         <div class="text16 cadet-gray-text">
